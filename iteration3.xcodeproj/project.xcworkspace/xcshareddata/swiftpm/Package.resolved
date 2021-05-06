@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AppDevWithSwiftLibrary",
+        "repositoryURL": "https://github.com/iitgrad/AppDevWithSwiftLibrary.git",
+        "state": {
+          "branch": null,
+          "revision": "ac2056b5379ad494510c370588fceda5ed3e1db8",
+          "version": "1.8.9"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
