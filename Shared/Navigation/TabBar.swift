@@ -15,13 +15,7 @@ struct TabBar: View {
                 .tabItem {
                     Image(systemName: "menubar.rectangle")
                     Text("Menu")
-                }
-            
-            MessagesView()
-                
-                .tabItem {
-                    Image(systemName: "envelope.badge")
-                    Text("Barter Talk")
+                     
                 }
             
             BarterBoardView()
@@ -31,6 +25,15 @@ struct TabBar: View {
                     Text("Barter Board")
                 }
             
+            
+            MessagesView()
+                
+                .tabItem {
+                    Image(systemName: "envelope.badge")
+                    Text("Barter DM")
+                }
+            
+          
             ProfileView()
                 
                 .tabItem {
@@ -38,6 +41,7 @@ struct TabBar: View {
                     Text("Profile")
                 }
         }
+        .accentColor(Color("teal bg"))
     }
 }
 

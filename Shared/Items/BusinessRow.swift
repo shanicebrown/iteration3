@@ -14,8 +14,9 @@ struct BusinessRow: View {
         HStack(alignment: .top) {
             Image(item.logo)
                 .renderingMode(.original)
+               // .resizable()
                 .frame(width: 48.0, height: 48.0)
-                .imageScale(.small)
+                .imageScale(.medium)
                 .background(item.color)
                 .clipShape(Circle())
                 .foregroundColor(.white)

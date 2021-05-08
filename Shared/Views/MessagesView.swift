@@ -14,7 +14,7 @@ struct MessagesView: View {
         
         VStack {
             Spacer()
-                .frame(height: 5)
+                .frame(height: 3)
             Image ("chat01")
                 .resizable()
                 .frame(width: 400, height: 790)

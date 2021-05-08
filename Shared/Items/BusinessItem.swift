@@ -9,11 +9,8 @@ import SwiftUI
 
 struct BusinessItem: View {
     var business: Business = businesses[0]
-    #if os(iOS)
     var cornerRadius: CGFloat = 22
-    #else
-    var cornerRadius: CGFloat = 10
-    #endif
+   
     
     var body: some View {
         VStack(alignment: .leading, spacing: 4.0) {

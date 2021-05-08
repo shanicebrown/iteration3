@@ -15,8 +15,8 @@ struct ProfileView: View {
                     .fill(Color("off white bg"))
                     .frame(width: 150.0, height: 150.0)
                     .offset(x: 179, y: -300)
-                    
-               
+                
+                
                 
                 Circle()
                     .fill(Color("teal bg"))
@@ -29,7 +29,7 @@ struct ProfileView: View {
                     Spacer()
                     RoundedRectangle(cornerRadius: 40)
                         .fill(Color("off white bg"))
-                        .frame(height: gr.size.height * 0.7)
+                        .frame(height: gr.size.height * 0.68)
                         .offset(y: 40)
                 }
             }
@@ -37,30 +37,34 @@ struct ProfileView: View {
                 
                 Spacer()
                     .frame(height: 20)
-               // Image("17_W").mask(Circle())
-                Circle()
-                    .frame(width: 100, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    
                 
                 
-                Capsule()
+        Image("17_W")
+            .resizable()
+            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                    .frame(width: 150, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .overlay(Circle().stroke(Color("teal bg")))
+                
+                
+                
+                RoundedRectangle(cornerRadius: 10)
                     .fill(Color("coral bg"))
                     .frame(width: 200.0, height: 50.0)
                 
                 Spacer()
                     .frame(height: 75)
                 HStack {
-                    RoundedRectangle(cornerRadius: 15.0)
+                    RoundedRectangle(cornerRadius: 22)
                         .fill(Color("grey bg"))
                     
-                    RoundedRectangle(cornerRadius: 15.0)
+                    RoundedRectangle(cornerRadius: 22)
                         .fill(Color("teal bg"))
                 }
                 HStack(spacing: 16.0) {
-                    RoundedRectangle(cornerRadius: 15.0)
+                    RoundedRectangle(cornerRadius: 22)
                         .fill(Color("coral bg"))
                     
-                    RoundedRectangle(cornerRadius: 15.0)
+                    RoundedRectangle(cornerRadius: 22)
                         .fill(Color("yello bg"))
                 }
                 Spacer()

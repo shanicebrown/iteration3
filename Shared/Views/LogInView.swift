@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
+import AuthenticationServices
 
-let deeproseColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255/0)
+let deeproseColor = Color(#colorLiteral(red: 0, green: 0.8078431373, blue: 0.7960784314, alpha: 0.465055352))
 
 let storedUsername = "Christie"
 let storedPassword = "Richardson"
@@ -24,11 +25,12 @@ struct LogInView: View {
         
             ZStack {
                 VStack {
-                    
+                    Spacer()
+                        .frame(height: 100)
                     Barter()
                     Image("Illustration 2")
                         .resizable()
-                        .frame(width: 300, height: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 350, height: 350, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     Shop()
                     UsernameField(username: $username)
                     PasswordField(password: $password)
@@ -43,7 +45,11 @@ struct LogInView: View {
                     }, label: {
                         LoginButtonContent()
                     })
-                    
+                    SignInWithAppleButton(.continue,
+                    onRequest: { request in },
+                    onCompletion: { result in })
+                    .signInWithAppleButtonStyle(.whiteOutline)
+                    .frame(height: 50)
                 }
                 .padding()
             }
@@ -78,9 +84,9 @@ struct LogInView: View {
                 .font(.headline)
                 .foregroundColor(.white)
                 .padding()
-                .frame(width: 200, height: 50)
+                .frame(width: 400, height: 50)
                 .background(Color.black)
-                .cornerRadius(35.0)
+                .cornerRadius(10.0)
         }
     }
     struct UsernameField: View {
@@ -90,7 +96,7 @@ struct LogInView: View {
             TextField("Username", text: $username)
                 .padding()
                 .background(deeproseColor)
-                .cornerRadius(4.0)
+                .cornerRadius(10.0)
                 .padding(4.0)
         }
     }
@@ -102,7 +108,7 @@ struct LogInView: View {
             SecureField("Password", text: $password)
                 .padding()
                 .background(deeproseColor)
-                .cornerRadius(4.0)
+                .cornerRadius(10.0)
                 .padding(4.0)
         }
     }
