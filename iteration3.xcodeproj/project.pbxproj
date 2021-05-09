@@ -98,7 +98,6 @@
 				98B44A9A262E696C000DCFB5 /* MessagesView.swift */,
 				98B44AA3262E6E2E000DCFB5 /* BarterBoardView.swift */,
 				98DBFEC7262BD23900F9022C /* BusinessView.swift */,
-				9847E6D52641BE7C00BA066B /* OnboardingScreenView.swift */,
 				98E366E726446A9300746306 /* ProfileView.swift */,
 				98E366E9264484F300746306 /* LogInView.swift */,
 			);
@@ -115,6 +114,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		98BE87E42647802A00C2AC62 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				9847E6D32641BD8C00BA066B /* OnboardingScreens.swift */,
+				9847E6D52641BE7C00BA066B /* OnboardingScreenView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		98DBFE92262BA64C00F9022C = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +135,7 @@
 		98DBFE97262BA64D00F9022C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				98BE87E42647802A00C2AC62 /* Onboarding */,
 				98DBFE98262BA64D00F9022C /* iteration3App.swift */,
 				98138CC226372A72003945F3 /* Views */,
 				98DBFED6262BE82500F9022C /* Navigation */,
@@ -136,7 +145,6 @@
 				98B44A6F262CFA1F000DCFB5 /* BusinessDetail.swift */,
 				98DBFEDC262BE90600F9022C /* BusinessList.swift */,
 				98138CC526372B56003945F3 /* BusinessSectionDetail.swift */,
-				9847E6D32641BD8C00BA066B /* OnboardingScreens.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";

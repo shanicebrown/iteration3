@@ -27,8 +27,7 @@ struct BarterBoardView: View {
     var body: some View {
         ZStack {
             VStack {
-                Spacer()
-                    .frame(height: 16 )
+              
                 Text("Post to The Barter Board")
                     .font(.largeTitle)
                     .fontWeight(.semibold)

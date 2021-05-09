@@ -15,7 +15,7 @@ struct TabBar: View {
                 .tabItem {
                     Image(systemName: "menubar.rectangle")
                     Text("Menu")
-                     
+                    
                 }
             
             BarterBoardView()
@@ -33,7 +33,7 @@ struct TabBar: View {
                     Text("Barter DM")
                 }
             
-          
+            
             ProfileView()
                 
                 .tabItem {

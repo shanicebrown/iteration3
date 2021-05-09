@@ -14,13 +14,13 @@ struct BusinessRow: View {
         HStack(alignment: .top) {
             Image(item.logo)
                 .renderingMode(.original)
-               // .resizable()
+                // .resizable()
                 .frame(width: 48.0, height: 48.0)
                 .imageScale(.medium)
                 .background(item.color)
                 .clipShape(Circle())
                 .foregroundColor(.white)
-                
+            
             VStack(alignment: .leading, spacing: 4.0) {
                 Text(item.businessName)
                     .font(.subheadline)

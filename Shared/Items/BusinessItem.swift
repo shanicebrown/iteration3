@@ -10,7 +10,7 @@ import SwiftUI
 struct BusinessItem: View {
     var business: Business = businesses[0]
     var cornerRadius: CGFloat = 22
-   
+    
     
     var body: some View {
         VStack(alignment: .leading, spacing: 4.0) {
@@ -18,19 +18,19 @@ struct BusinessItem: View {
             HStack {
                 Spacer()
                 Image(business.image)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-            Spacer()
-        }
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                Spacer()
+            }
             Text(business.industry)
                 .fontWeight(.bold)
                 .foregroundColor(Color.black)
-                
+            
             //Text(business.description)
-              // .font(.footnote)
-               // .foregroundColor(.black)
-                
-                
+            // .font(.footnote)
+            // .foregroundColor(.black)
+            
+            
         }
         .padding(.all)
         .background(business.color)

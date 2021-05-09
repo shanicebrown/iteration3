@@ -9,15 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     @State var isLoggedIn = false
-    
+    @State var shouldShowOnboarding: Bool = true
     var body: some View {
-        if isLoggedIn {
-            TabBar()
-        } else {
-            LogInView(isLoggedIn: $isLoggedIn)
+        
+        NavigationView {
+            if isLoggedIn {
+                TabBar()
+            } else {
+                LogInView(isLoggedIn: $isLoggedIn)
+            }
         }
+        .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
+            OnboardingScreenView(shouldShowOnboarding: $shouldShowOnboarding)
+        })
+        
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

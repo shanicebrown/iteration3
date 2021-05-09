@@ -12,7 +12,7 @@ struct BusinessList: View {
     var body: some View {
         content
             .listStyle(InsetGroupedListStyle())
-      
+        
     }
     var content: some View {
         List(0 ..< 12) { item in
@@ -20,7 +20,7 @@ struct BusinessList: View {
         }
         
         .navigationTitle("Local Professionals")
-}
+    }
 }
 
 struct BusinessList_Previews: PreviewProvider {

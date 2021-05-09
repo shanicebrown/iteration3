@@ -10,7 +10,7 @@ import SwiftUI
 struct BusinessSectionDetail: View {
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
-    
+        
         ZStack(alignment: .topTrailing) {
             ScrollView {
                 BusinessItem(cornerRadius: 0)
@@ -21,9 +21,9 @@ struct BusinessSectionDetail: View {
                     Text("60657")
                     
                     Image("daycare")
-                       
-                        
-                    Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ")
+                    
+                    
+                    Text("ABC & 123 Daycare is a registered child care.  We provide loving and educational experiences for children ages two – six years old, with teachers who are sensitive to the individual needs of the students. We strive to nurture the hearts and minds of our students academically, socially, emotionally, and spiritually.   ")
                 }
                 .padding()
                 .font(.title2)

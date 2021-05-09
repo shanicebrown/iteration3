@@ -12,14 +12,14 @@ struct BusinessDetail: View {
     var business: Business = businesses[0]
     var namespace: Namespace.ID
     var cornerRadius: CGFloat = 10
-
+    
     @State var showModal = false
     
     var body: some View {
-    
+        
         content
-        .edgesIgnoringSafeArea(.all)
-      
+            .edgesIgnoringSafeArea(.all)
+        
     }
     
     var content: some View {
@@ -33,7 +33,7 @@ struct BusinessDetail: View {
                         BusinessRow(item: item)
                             .sheet(isPresented: $showModal) {
                                 BusinessSectionDetail()
-                        
+                                
                             }
                             .onTapGesture {
                                 showModal = true

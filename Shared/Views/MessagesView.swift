@@ -13,11 +13,11 @@ struct MessagesView: View {
         
         
         VStack {
-            Spacer()
-                .frame(height: 3)
             Image ("chat01")
                 .resizable()
-                .frame(width: 400, height: 790)
+                .frame(width: 400, height: 825)
+            Spacer()
+                .frame(height: 40)
         }
     }
 }
