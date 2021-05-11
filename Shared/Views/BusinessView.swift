@@ -23,7 +23,6 @@ struct BusinessView: View {
                 .background(VisualEffectBlur(blurStyle: .systemMaterial).edgesIgnoringSafeArea(.all))
        
         }
-        .navigationTitle("Personal Services")
     }
     var content: some View {
         
@@ -141,28 +140,8 @@ struct BusinessView: View {
             }
         }
     }
-    var sidebar: some View {
-        NavigationView {
-            List {
-        NavigationLink(
-            destination: BusinessView()) {
-            Label("Menu", systemImage: "book.closed")
-        }
-
-        Label("Barter Talk", systemImage: "message")
-        Label("Barter Board", systemImage: "42.circle")
-
-        Label("Profile", systemImage: "person")
-
-       
-
-       
-
     }
-            .listStyle(SidebarListStyle())
-        }
-    }
-}
+
 struct BusinessView_Previews: PreviewProvider {
     static var previews: some View {
         BusinessView()

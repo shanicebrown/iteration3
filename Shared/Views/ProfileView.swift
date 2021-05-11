@@ -46,20 +46,25 @@ struct ProfileView: View {
             .overlay(Circle().stroke(Color("teal bg")))
                 
                 
-                
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(Color("coral bg"))
+                Text("Regina Riveria")
+                    .font(.title)
+                    .foregroundColor(.white)
                     .frame(width: 200.0, height: 50.0)
+                    .background(Color("coral bg"))
+                    .cornerRadius(10.0)
                 
                 Spacer()
                     .frame(height: 75)
-                HStack {
-                    RoundedRectangle(cornerRadius: 22)
-                        .fill(Color("grey bg"))
-                    
-                    RoundedRectangle(cornerRadius: 22)
-                        .fill(Color("teal bg"))
-                }
+                
+                
+                    HStack(spacing: 16.0) {
+                        RoundedRectangle(cornerRadius: 22)
+                            .fill(Color("grey bg"))
+                        
+                        RoundedRectangle(cornerRadius: 22)
+                            .fill(Color("teal bg"))
+                    }
+               
                 HStack(spacing: 16.0) {
                     RoundedRectangle(cornerRadius: 22)
                         .fill(Color("coral bg"))

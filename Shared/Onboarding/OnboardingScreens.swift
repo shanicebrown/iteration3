@@ -34,18 +34,18 @@ struct OnboardingScreens: View {
                 .foregroundColor((Color(.secondaryLabel)))
                 .padding()
             
-            if showsDismissButton {
-                Button(action: {
-                    shouldShowOnboarding.toggle()
-                }, label: {
-                    Text("Get Started Now")
-                        .bold()
-                        .foregroundColor(Color.white)
-                        .frame(width: 400, height: 50)
-                        .background(Color("teal bg"))
-                        .cornerRadius(10.0)
-                })
-            }
+//            if showsDismissButton {
+//                Button(action: {
+//                    shouldShowOnboarding.toggle()
+//                }, label: {
+//                    Text("Get Started Now")
+//                        .bold()
+//                        .foregroundColor(Color.white)
+//                        .frame(width: 400, height: 50)
+//                        .background(Color("teal bg"))
+//                        .cornerRadius(10.0)
+//                })
+//            }
         }
     }
 }

@@ -50,8 +50,12 @@ struct LogInView: View {
                                       onCompletion: { result in })
                     .signInWithAppleButtonStyle(.whiteOutline)
                     .frame(height: 50)
+                
+                Spacer()
+                    .frame(height: 40)
             }
             .padding()
+            
         }
         
     }

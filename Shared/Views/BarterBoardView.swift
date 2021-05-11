@@ -27,8 +27,7 @@ struct BarterBoardView: View {
     var body: some View {
         ZStack {
             VStack {
-              
-                Text("Post to The Barter Board")
+               Text("Barter Board")
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .multilineTextAlignment(.center)
@@ -82,6 +81,7 @@ struct BarterBoardView: View {
         }
         }
         .background(Color(#colorLiteral(red: 0.8470588235, green: 0.8470588235, blue: 0.8470588235, alpha: 1)))
+        .navigationBarHidden(true)
     }
     
 }
