@@ -15,7 +15,7 @@ struct OnboardingScreens: View {
     @Binding var shouldShowOnboarding: Bool
     
     var body: some View{
-        
+        // Properties for Onbaroding Screens
         
         VStack{
             
@@ -33,7 +33,7 @@ struct OnboardingScreens: View {
                 .multilineTextAlignment(.center)
                 .foregroundColor((Color(.secondaryLabel)))
                 .padding()
-            
+            // Button Dismiss
 //            if showsDismissButton {
 //                Button(action: {
 //                    shouldShowOnboarding.toggle()

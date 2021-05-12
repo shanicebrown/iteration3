@@ -10,6 +10,8 @@ import SwiftUI
 struct OnboardingScreenView: View {
     @Binding var shouldShowOnboarding: Bool
     @State var pageNumber = 0
+    
+    // Creating onboarding screens
     var body: some View {
         TabView(selection:$pageNumber) {
             
@@ -31,7 +33,7 @@ struct OnboardingScreenView: View {
             
             VStack {
                 Spacer().frame(height: 100)
-                OnboardingScreens(image: "Illustration 6",
+                OnboardingScreens(image: "Illustration 10",
                                   title: "Share your Needs",
                                   detail: "and find your match on the Barter Board.",
                                   showsDismissButton: false,
@@ -46,7 +48,7 @@ struct OnboardingScreenView: View {
             
             VStack {
                 Spacer().frame(height: 100)
-                OnboardingScreens(image: "Illustration 6",
+                OnboardingScreens(image: "Illustration 1",
                                   title: "Communicate",
                                   detail:  "with other people using the Barber DM.",
                                   showsDismissButton: false,
@@ -59,7 +61,7 @@ struct OnboardingScreenView: View {
             
             VStack {
                 Spacer().frame(height: 100)
-                OnboardingScreens(image: "Illustration 6",
+                OnboardingScreens(image: "Illustration 5",
                                   title: "Visit and Edit the Profile",
                                   detail: "to learn about other members and update your own. ",
                                   showsDismissButton: false,
@@ -86,7 +88,7 @@ struct OnboardingScreenView: View {
             
             
         }
-        
+        // Getting Pages to tab in Onboarding
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
         
     }

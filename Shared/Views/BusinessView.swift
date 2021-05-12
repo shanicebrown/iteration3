@@ -24,6 +24,7 @@ struct BusinessView: View {
        
         }
     }
+    
     var content: some View {
         
         ScrollView {

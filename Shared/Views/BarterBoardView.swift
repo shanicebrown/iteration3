@@ -7,7 +7,7 @@
 
 import SwiftUI
 import AppDevWithSwiftLibrary
-
+// message board created with user defaults.
 let kBoardUUID = "de86cf95-eb9f-42c4-aed0-d80422b6cc54".uppercased()
 struct Post: Hashable, Codable {
     var id = UUID()
@@ -20,6 +20,8 @@ struct Board: Hashable, Codable {
     var posts = [Post]()
     
 }
+
+//Barter Board View
 struct BarterBoardView: View {
     let cloud = AppDevWithSwiftCloud(appID: "094fdc57-8f37-43cf-b1ec-7d7e89732327", userID: "kevin")
     @State private var board = Board(id: UUID(uuidString: kBoardUUID)!, name: "First Board", posts: [])

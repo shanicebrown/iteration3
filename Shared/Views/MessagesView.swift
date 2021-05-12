@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//View for the messages
 struct MessagesView: View {
     var body: some View {
         
@@ -20,6 +21,7 @@ struct MessagesView: View {
 }
 }
 
+//View for the conversation
 struct  ConversationView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -34,6 +36,7 @@ struct  ConversationView: View {
     }
 }
 
+// Creating the message bubble its self
 struct messageBubble: Shape {
     var myMessage: Bool
     func path(in rect: CGRect) -> Path {
@@ -43,7 +46,7 @@ struct messageBubble: Shape {
     }
 }
 
-
+// Creating the two chat cells.
 struct ChatCell: View {
     var data: Message
     var body: some View {
@@ -75,7 +78,7 @@ struct Message: Identifiable {
 }
 
 
-
+// Creating the static imessage chat field at the bottom.
 struct ChatBottomBar: View {
     var body: some View {
         HStack (spacing: 20) {
@@ -101,15 +104,13 @@ struct ChatBottomBar: View {
     }
 }
 
-
+// Creating TopView with advatar and logo
 
 struct  ChatTopView: View  {
     var body: some View {
         VStack {
             HStack {
-               // Image(systemName: "chevron.left")
-                  //  .foregroundColor(Color("teal bg"))
-                Spacer()
+             Spacer()
                 VStack {
                     Image("04_M")
                         .resizable()
@@ -127,6 +128,7 @@ struct  ChatTopView: View  {
     }
 }
 
+// imessage hard coded.
 var AllMessages = [
     Message(id: 0, message: "Hey Paul, Im Regina I am a stylist. I recently visited your profile. Are you a landscaper? I could use my lawn mowed and weeds removed.", myMessage: false),
     Message(id: 1, message: "Hello Regenia. I am actually in need of a hair cut ASAP. Maybe we can work something out.", myMessage: true),
@@ -136,10 +138,6 @@ var AllMessages = [
     Message(id: 6, message: "Sending the offer now.", myMessage: true),
     Message(id: 7, message: "System Message: You have been sent a new barter.  This chat thread is verification of your agreement. Once you accept the offer, your barter detail will be provided to you.", myMessage: true),
 ]
-
-
-
-
 
 struct MessagesView_Previews: PreviewProvider {
     static var previews: some View {
