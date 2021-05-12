@@ -16,14 +16,14 @@ struct BusinessSectionDetail: View {
                 BusinessItem(cornerRadius: 0)
                     .frame(height: 300)
                 VStack (alignment: .leading, spacing: 10) {
-                    Text("ABC & 123 Daycare").bold()
-                    Text("1901 W. Cornelia Ave")
-                    Text("60657")
+                    Text("Trust & Care Lawn Services").bold()
+                    Text("2300 W. 90th St.")
+                    Text("60643")
                     
-                    Image("daycare")
+                    Image("lawn")
                     
                     
-                    Text("ABC & 123 Daycare is a registered child care.  We provide loving and educational experiences for children ages two – six years old, with teachers who are sensitive to the individual needs of the students. We strive to nurture the hearts and minds of our students academically, socially, emotionally, and spiritually.   ")
+                    Text("Trust & Care Services is a social enterprise landscaping and snow removal company geared towards creating jobs for people in under-served communities. We are recognized as the leader in Lawn Care, Landscaping, Snow Removal and Parking Lot Maintenance in the greater Chicago area. Whether you need knowledgeable and expert lawn service, custom designed residential or commercial landscaping, professional snow removal services, or parking lot maintenance. ")
                 }
                 .padding()
                 .font(.title2)

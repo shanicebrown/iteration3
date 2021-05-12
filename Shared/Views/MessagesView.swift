@@ -128,7 +128,7 @@ struct  ChatTopView: View  {
 }
 
 var AllMessages = [
-    Message(id: 0, message: "Hey Paul, Im Regenia I am a stylist. I recently visited your profile. Are you a landscaper? I could use my lawn mowed and weed removeral.", myMessage: false),
+    Message(id: 0, message: "Hey Paul, Im Regenia I am a stylist. I recently visited your profile. Are you a landscaper? I could use my lawn mowed and weeds removed.", myMessage: false),
     Message(id: 1, message: "Hello Regenia. I am actually in need of a hair cut ASAP. Maybe we can work something out.", myMessage: true),
     Message(id: 2, message: "Sounds good what's your availabilty like next week. Looking to barter right away.", myMessage: false),
     Message(id: 3, message: "Monday or Tuesday is fine. If we have a deal I can send you the offer.", myMessage: true),

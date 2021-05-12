@@ -41,7 +41,7 @@ struct BarterBoardView: View {
                     postMessage = ""
                     hideKeyboard()
                 }, label: {
-                    Text("Add Post")
+                    Text("Add Barter")
                         .font(.title3)
                         .foregroundColor(Color("teal bg"))
                 }).padding(16)
@@ -68,7 +68,7 @@ struct BarterBoardView: View {
                         }
                     }
                 }, label: {
-                    Text("Get Board Posts")
+                    Text("Get Barter Request")
                         .font(.title3)
                         .foregroundColor(Color("teal bg"))
                 }).padding()

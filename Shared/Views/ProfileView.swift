@@ -12,7 +12,7 @@ struct ProfileView: View {
         ZStack {
             VStack {
                 Circle()
-                    .fill(Color("off white bg"))
+                    .fill(Color("yello bg"))
                     .frame(width: 150.0, height: 150.0)
                     .offset(x: 179, y: -300)
                 
@@ -46,9 +46,9 @@ struct ProfileView: View {
             .overlay(Circle().stroke(Color("teal bg")))
                 
                 
-                Text("Regina Riveria")
+                Text("Regenia Rivera")
                     .font(.title)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .frame(width: 200.0, height: 50.0)
                     .background(Color("coral bg"))
                     .cornerRadius(10.0)
@@ -58,19 +58,78 @@ struct ProfileView: View {
                 
                 
                     HStack(spacing: 16.0) {
-                        RoundedRectangle(cornerRadius: 22)
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 22)
+                               
                             .fill(Color("grey bg"))
+                            VStack {
+                                Image(systemName: "checkmark.seal")
+                                    .resizable()
+                                    .foregroundColor(.blue)
+                                    
+                                    
+    
+                                    .frame(width: 40, height: 40)
+                                    
+                                    
+                            
+                                Text("Verified")
+                                    .fontWeight(.semibold)
+                                .foregroundColor(.black)
+                        }
+                        }
                         
-                        RoundedRectangle(cornerRadius: 22)
-                            .fill(Color("teal bg"))
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 22)
+                                .fill(Color("teal bg"))
+                            VStack {
+                                Image("stars")
+                                    .resizable()
+                                    .frame(width: 90, height: 60, alignment: .center)
+                                    .frame(width: 30, height: 5)
+                                    .foregroundColor(Color.yellow)
+                                   
+                            
+                                Text("Barterer")
+                                    .fontWeight(.semibold)
+                                .foregroundColor(.black)
+                            }
+                            
+                          
+                        }
                     }
                
                 HStack(spacing: 16.0) {
-                    RoundedRectangle(cornerRadius: 22)
-                        .fill(Color("coral bg"))
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 22)
+                            .fill(Color("coral bg"))
+                        VStack(alignment: .leading) {
+                            Text("Bartering Since:")
+                                .fontWeight(.semibold)
+                                .foregroundColor(.black)
+                        
+                        Text("April 2021")
+                            .foregroundColor(.black)
+                        }
+                        
+                    }
                     
-                    RoundedRectangle(cornerRadius: 22)
-                        .fill(Color("yello bg"))
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 22)
+                            .fill(Color("yello bg"))
+                        VStack(alignment: .leading) {
+                           // Image(systemName: //"checkmark.seal")
+                              //  .frame(height: 30)
+                        
+                            Text("Servicing:")
+                                .fontWeight(.semibold)
+                                .multilineTextAlignment(.center)
+                            Text("Chatham")
+                            Text("Beverly")
+                            Text("Evergreen Park")
+                            .foregroundColor(.black)
+                    }
+                    }
                 }
                 Spacer()
                     .frame(height: 50)

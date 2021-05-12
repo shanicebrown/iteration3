@@ -18,8 +18,8 @@ struct BusinessSection: Identifiable, Hashable {
 var businessSections = [
     
     BusinessSection(
-        businessName: "ABC & 123 Daycare",
-        serviceProvided: "Logo Design",
+        businessName: "Trust & Care Lawn Services",
+        serviceProvided: "Land Scaping and Weed Removal",
         logo: "Logo Barter Shop",
         color: Color(#colorLiteral(red: 1, green: 0.368627451, blue: 0.3568627451, alpha: 1))
     ),

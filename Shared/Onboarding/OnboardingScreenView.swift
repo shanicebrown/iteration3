@@ -17,8 +17,8 @@ struct OnboardingScreenView: View {
                 Spacer().frame(height: 100)
                 OnboardingScreens(
                     image: "Illustration 5",
-                    title: "Step 1",
-                    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                    title: "Explore",
+                    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
                     showsDismissButton: false,
                     shouldShowOnboarding: $shouldShowOnboarding
                     
@@ -32,8 +32,8 @@ struct OnboardingScreenView: View {
             VStack {
                 Spacer().frame(height: 100)
                 OnboardingScreens(image: "Illustration 6",
-                                  title: "Step 2",
-                                  detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                  title: "Share",
+                                  detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
                                   showsDismissButton: false,
                                   shouldShowOnboarding: $shouldShowOnboarding
                 )
@@ -47,8 +47,8 @@ struct OnboardingScreenView: View {
             VStack {
                 Spacer().frame(height: 100)
                 OnboardingScreens(image: "Illustration 7",
-                                  title: "Step 3",
-                                  detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                  title: "Commumicate",
+                                  detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
                                   showsDismissButton: true,
                                   shouldShowOnboarding: $shouldShowOnboarding
                 )
@@ -61,8 +61,8 @@ struct OnboardingScreenView: View {
             VStack {
                 Spacer().frame(height: 100)
                 OnboardingScreens(image: "Illustration 6",
-                                  title: "Step 2",
-                                  detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                  title: "Visit the Profile",
+                                  detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
                                   showsDismissButton: false,
                                   shouldShowOnboarding: $shouldShowOnboarding
                 )
