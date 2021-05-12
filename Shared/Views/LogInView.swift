@@ -26,11 +26,11 @@ struct LogInView: View {
         ZStack {
             VStack {
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 50)
                 Barter()
                 Image("Illustration 2")
                     .resizable()
-                    .frame(width: 350, height: 350, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 200, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 Shop()
                 UsernameField(username: $username)
                 PasswordField(password: $password)
@@ -65,10 +65,13 @@ struct LogInView: View {
 
 struct Barter: View {
     var body: some View {
-        Text("The Barter Shop")
-            .font(.largeTitle)
-            .fontWeight(.bold)
-            .padding(.bottom, 10.0)
+        //Text("The Barter Shop")
+        Image("Hand Shake 1")
+            .resizable()
+            .frame(width: 225, height: 225, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+           // .font(.largeTitle)
+           // .fontWeight(.bold)
+            .padding()
         
     }
 }

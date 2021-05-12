@@ -36,8 +36,8 @@ var businessSections = [
         color: Color(#colorLiteral(red: 1, green: 1, blue: 0.9176470588, alpha: 1))
     ),
     BusinessSection(
-        businessName: "AWK Writing Services",
-        serviceProvided: "Grant Writing",
+        businessName: "TWISTED Salon",
+        serviceProvided: "Hair Salon",
         logo: "Logo Barter Shop",
         color: Color(#colorLiteral(red: 0, green: 0.8078431373, blue: 0.7960784314, alpha: 1))
     ),
@@ -48,20 +48,20 @@ var businessSections = [
         color: Color(#colorLiteral(red: 1, green: 0.9294117647, blue: 0.4, alpha: 1))
     ),
     BusinessSection(
-        businessName: "Movie Edits R Us",
-        serviceProvided: "Digital Content Editing",
+        businessName: "Fanfare Catering",
+        serviceProvided: "Catering and Food Services",
         logo: "Logo Barter Shop",
         color: Color(#colorLiteral(red: 1, green: 0.368627451, blue: 0.3568627451, alpha: 1))
     ),
     BusinessSection(
-        businessName: "Chi-Town Translation Services",
-        serviceProvided: "Language Translation Services",
+        businessName: "Marie's Alteration",
+        serviceProvided: "Tailoring and Alterations",
         logo: "Logo Barter Shop",
         color: Color(#colorLiteral(red: 0.8470588235, green: 0.8470588235, blue: 0.8470588235, alpha: 1))
     ),
     BusinessSection(
         businessName: "House of Sanchez",
-        serviceProvided: "Website Builing",
+        serviceProvided: "Fashion Design",
         logo: "Logo Barter Shop",
         color: Color(#colorLiteral(red: 1, green: 1, blue: 0.9176470588, alpha: 1))
     ),

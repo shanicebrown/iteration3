@@ -18,7 +18,7 @@ struct OnboardingScreenView: View {
                 OnboardingScreens(
                     image: "Illustration 5",
                     title: "Explore",
-                    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+                    detail: "the Menu to find out about our services.",
                     showsDismissButton: false,
                     shouldShowOnboarding: $shouldShowOnboarding
                     
@@ -32,8 +32,8 @@ struct OnboardingScreenView: View {
             VStack {
                 Spacer().frame(height: 100)
                 OnboardingScreens(image: "Illustration 6",
-                                  title: "Share",
-                                  detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+                                  title: "Share your Needs",
+                                  detail: "and find your match on the Barter Board.",
                                   showsDismissButton: false,
                                   shouldShowOnboarding: $shouldShowOnboarding
                 )
@@ -46,23 +46,22 @@ struct OnboardingScreenView: View {
             
             VStack {
                 Spacer().frame(height: 100)
-                OnboardingScreens(image: "Illustration 7",
-                                  title: "Commumicate",
-                                  detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-                                  showsDismissButton: true,
+                OnboardingScreens(image: "Illustration 6",
+                                  title: "Communicate",
+                                  detail:  "with other people using the Barber DM.",
+                                  showsDismissButton: false,
                                   shouldShowOnboarding: $shouldShowOnboarding
                 )
                 .background(Color("yello bg").cornerRadius(22.0))
                 Spacer()
-                
             }
             .tag(2)
             
             VStack {
                 Spacer().frame(height: 100)
                 OnboardingScreens(image: "Illustration 6",
-                                  title: "Visit the Profile",
-                                  detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+                                  title: "Visit and Edit the Profile",
+                                  detail: "to learn about other members and update your own. ",
                                   showsDismissButton: false,
                                   shouldShowOnboarding: $shouldShowOnboarding
                 )

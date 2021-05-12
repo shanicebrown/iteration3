@@ -46,7 +46,7 @@ struct ProfileView: View {
             .overlay(Circle().stroke(Color("teal bg")))
                 
                 
-                Text("Regenia Rivera")
+                Text("Regina Rivera")
                     .font(.title)
                     .foregroundColor(.black)
                     .frame(width: 200.0, height: 50.0)
@@ -103,12 +103,17 @@ struct ProfileView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 22)
                             .fill(Color("coral bg"))
-                        VStack(alignment: .leading) {
-                            Text("Bartering Since:")
-                                .fontWeight(.semibold)
-                                .foregroundColor(.black)
+                        VStack {
+                            Image(systemName: "calendar")
+                                .resizable()
+                                .foregroundColor(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
+
+                                .frame(width: 40, height: 40)
+                                
+                                
                         
-                        Text("April 2021")
+                            Text("Member Since April 21'")
+                                .fontWeight(.semibold)
                             .foregroundColor(.black)
                         }
                         
@@ -117,16 +122,20 @@ struct ProfileView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 22)
                             .fill(Color("yello bg"))
-                        VStack(alignment: .leading) {
-                           // Image(systemName: //"checkmark.seal")
-                              //  .frame(height: 30)
                         
-                            Text("Servicing:")
+                        VStack{
+                            Image(systemName: "bell")
+                                .resizable()
+                                .foregroundColor(.red)
+                                
+                                
+
+                                .frame(width: 40, height: 40)
+                                
+                                
+                        
+                            Text("Notifications")
                                 .fontWeight(.semibold)
-                                .multilineTextAlignment(.center)
-                            Text("Chatham")
-                            Text("Beverly")
-                            Text("Evergreen Park")
                             .foregroundColor(.black)
                     }
                     }

@@ -43,7 +43,7 @@ var businesses = [
         color: Color(#colorLiteral(red: 0, green: 0.8078431373, blue: 0.7960784314, alpha: 1))
     ),
     Business(
-        industry: "Programming & Services",
+        industry: "Programming Services",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit.",
         image: "Illustration 5",
         color: Color(#colorLiteral(red: 1, green: 0.9294117647, blue: 0.4, alpha: 1))

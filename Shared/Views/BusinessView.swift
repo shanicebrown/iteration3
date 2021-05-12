@@ -61,17 +61,17 @@ struct BusinessView: View {
                 .padding(16)
                 .frame(maxWidth: .infinity)
                 
-                Text("Newest Barterers")
-                    .fontWeight(.semibold)
-                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                    .padding()
+//              //  Text("Newest Barterers")
+//                    .fontWeight(.semibold)
+//                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+//                    .padding()
                 
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 240))]) {
                     ForEach(businessSections) { item in
                         NavigationLink(
                             destination: BusinessDetail(namespace: namespace2)) {
                     
-                            BusinessRow(item: item)
+                           // BusinessRow(item: item)
                         }
                     }
                 }
